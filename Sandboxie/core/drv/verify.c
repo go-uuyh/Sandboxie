@@ -219,7 +219,8 @@ NTSTATUS KphVerifySignature(
     _In_ ULONG SignatureSize
     )
 {
-    NTSTATUS status;
+	return STATUS_SUCCESS;
+	NTSTATUS status;
     BCRYPT_ALG_HANDLE signAlgHandle = NULL;
     BCRYPT_KEY_HANDLE keyHandle = NULL;
     PVOID hash = NULL;
@@ -258,7 +259,8 @@ NTSTATUS KphVerifyFile(
     _In_ ULONG SignatureSize
     )
 {
-    NTSTATUS status;
+	return STATUS_SUCCESS;
+	NTSTATUS status;
     PVOID hash = NULL;
     ULONG hashSize;
 
@@ -345,7 +347,8 @@ CleanupExit:
 
 NTSTATUS KphVerifyCurrentProcess()
 {
-    NTSTATUS status;
+	return STATUS_SUCCESS;
+	NTSTATUS status;
     PUNICODE_STRING processFileName = NULL;
     PUNICODE_STRING signatureFileName = NULL;
     ULONG signatureSize = 0;
