@@ -2392,7 +2392,7 @@ void CSandMan::OnLogSbieMessage(quint32 MsgCode, const QStringList& MsgData, qui
 
 bool CSandMan::CheckCertificate(QWidget* pWidget) 
 {
-	if (g_CertInfo.valid)
+	if (true)
 		return true;
 
 	//if ((g_FeatureFlags & CSbieAPI::eSbieFeatureCert) == 0) {
