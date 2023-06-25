@@ -109,7 +109,7 @@ Qt::CheckState CSettingsWindow__Int2Chk(int state)
 quint32 g_FeatureFlags = 0;
 
 QByteArray g_Certificate;
-SCertInfo g_CertInfo = { .valid = 1, .expires_in_sec = 0xFFFFFFFF };
+SCertInfo g_CertInfo = { .valid = 1 };
 
 CSettingsWindow::CSettingsWindow(QWidget* parent)
 	: CConfigDialog(parent)
